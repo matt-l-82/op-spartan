@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "",
+    "sources": [
+        "../../wp-content/themes/understrap/sass/custom-editor-style.scss"
+    ],
+    "names": [],
+    "file": "custom-editor-style.css"
+}

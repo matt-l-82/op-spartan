@@ -1,0 +1,1066 @@
+// This is an empty scss file for your custom styles - Please add your super duper awesome mega design styles here
+
+body {
+    font-size: 16px;
+    font-family: 'Rajdhani', sans-serif;
+}
+
+// PAGE TITLES - ON EVEVERY HERO 
+.page-titles {
+    h5 {
+        font-family: 'Rajdhani', sans-serif;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 18px;
+        line-height: 32px;
+        /* identical to box height, or 178% */
+        text-align: center;
+        letter-spacing: -0.3px;
+        text-transform: uppercase;
+        /* default/shade/white */
+        color: #FFFFFF;
+    }
+
+    .underline {
+        margin: 0 auto 2rem auto;
+    }
+
+    h1 {
+        font-family: 'Rajdhani', sans-serif;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 78px;
+        line-height: 32px;
+        /* identical to box height, or 41% */
+
+        text-align: center;
+        letter-spacing: -0.3px;
+        text-transform: uppercase;
+
+        /* default/shade/white */
+
+        color: #FFFFFF;
+    }
+}
+
+
+//CUSTOM NAV STYLING
+.bg-primary {
+    background-color: transparent !important;
+}
+
+.navbar-brand img {
+    width: 161px;
+    height: auto;
+}
+
+#main-menu {
+    li {
+        a {
+            font-family: 'Rajdhani', sans-serif;
+            color: $primary !important;
+            text-transform: uppercase;
+            font-weight: 600;
+            letter-spacing: 0.5px;
+            transition: all .3s ease-in-out;
+
+            &:hover {
+                color: $red-firebrick !important;
+            }
+        }
+    }
+}
+
+#main-menu,
+.mobile-menu-dropdown {
+    margin-top: 22px;
+}
+
+.mobile-menu-dropdown {
+    color: $primary;
+    font-size: 18px;
+    font-weight: 700;
+
+    button, span, .fa-bars {
+       color: $primary;
+
+        span {
+            margin-right: 10px;
+        }
+
+    }
+}
+
+.extra-menu {
+    display: flex;
+    margin: 22px 0 0 0;
+    padding: 0;
+    list-style: none;
+
+    .login {
+        margin-right: 15px;
+        padding-right: 15px;
+        border-right: 2px solid #333;
+
+        a {
+            color: $red-firebrick;
+        }
+    }
+
+    a {
+        font-size: 18px;
+        text-transform: uppercase;
+        font-weight: 700;
+        letter-spacing: -.3px;
+        font-style: normal;
+        line-height: 32px;
+    }
+}
+
+// STOPS PAGE TITLE BEING DISPLAYED
+.page .entry-title { 
+    display: none;
+    }
+//REMOVES EDIT LINK UNDER PAGE TITLE
+.edit-link {
+    display: none;
+}
+
+//HERO / JUMBOTRON
+
+.jumbotron-fluid {
+    background-image: url('../images/shutterstock_1189517212.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 85vh;
+}
+
+.header-text {
+
+    h1 {
+        color: #fff;
+        font-size: 5.5em;
+        text-transform: uppercase;
+        font-weight: 600;
+        letter-spacing: 4px;
+
+      + p {
+            color: #fff;
+            letter-spacing: 7px;
+            font-weight: 600;
+        }
+    }
+}
+
+//CORE SERVICES 
+.core-services {
+    background-color: $primary;
+    padding: 6rem 2rem;
+
+    h6 {
+
+        color: #fff;
+
+    + h1 {
+        font-family: 'Rajdhani', sans-serif;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 64px;
+        line-height: 56px;
+        /* or 87% */
+        letter-spacing: -0.3px;
+        color: #FFFFFF;
+
+        }
+    }
+}
+
+.core-services {
+
+    .icon-wrapper {
+        border: 1px solid #968E3D;
+        box-sizing: border-box;
+        border-radius: 2px;
+        padding: 6rem 6rem 0.5rem 6rem;
+
+        img {
+            width: 100px;
+            height: 100px;
+
+           + p {
+            font-family: 'Rajdhani', sans-serif;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 28px;
+            line-height: 56px;
+            /* identical to box height, or 200% */
+            text-align: center;
+            letter-spacing: -0.3px;
+            color: #FFFFFF;
+            margin: 4rem 0 0 0;
+            text-transform: uppercase;
+            }
+        } 
+    }
+}
+
+
+//COMMUNITY
+.community {
+    // background: url('../images/map.png');
+    // background-position: center;
+    // background-size: cover;
+    // background-repeat: no-repeat;
+
+    .numbers-wrapper {
+        background-color: $red-firebrick;
+        color: #fff;
+        padding: 4rem 1rem;
+        margin-top: -50px;
+    }
+}
+
+.numbers {
+     p {
+        font-family: 'Rajdhani', sans-serif;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 64px;
+        line-height: 56px;
+        /* identical to box height, or 87% */
+        text-align: center;
+        letter-spacing: -0.3px; 
+        /* default/shade/white */
+        color: #FFFFFF;
+     }
+    
+     h4 {
+        text-transform: uppercase;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 24px;
+        line-height: 34px;
+        /* or 142% */
+        text-align: center;
+        letter-spacing: -0.3px;
+        /* default/shade/white */
+        color: #FFFFFF;
+        }
+    }
+
+.startsWith-wrapper {
+
+    .communityBg {
+        background: url('../images/kinshipSupport.png');
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+    h4 {
+        font-family: 'Rajdhani', sans-serif;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 28px;
+        line-height: 56px;
+        /* identical to box height, or 200% */
+        letter-spacing: -0.3px;
+        /* Secondary */
+        color: #23231B;
+        }
+
+    a {
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 32px;
+        /* identical to box height, or 178% */
+        letter-spacing: -0.3px;
+        color: #718096;
+        }
+
+    .num-number {
+        font-family: 'Rajdhani', sans-serif;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 98px;
+        line-height: 78px;
+        /* or 33% */
+    
+        text-align: center;
+        letter-spacing: -0.3px;
+        /* Primary */
+        color: #B92A20;
+        opacity: 0.2;
+        }
+
+    h3 {
+        font-size: 18px;
+        line-height: 24px;
+        font-weight: 700;
+    }
+        
+    p {
+        font-style: normal;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 32px;
+        /* or 178% */
+        letter-spacing: -0.3px;
+        /* Secondary */
+        color: #23231B;
+    }
+}
+
+// MEMBER SUPPORT SECTION
+.memberSupport {
+
+    position: relative;
+    background-color: $primary;
+    padding: 6rem 0;
+
+    img {
+        position: absolute;
+        left: -129px;
+        top: -138px;
+        -webkit-box-shadow: 38px 38px 0px -5px rgba(50,47,32,1);
+        -moz-box-shadow: 38px 38px 0px -5px rgba(50,47,32,1);
+        box-shadow: 38px 38px 0px -5px rgba(50,47,32,1);
+    }
+
+    h1 {
+        font-family: 'Rajdhani', sans-serif;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 48px;
+        line-height: 55px;
+        /* or 115% */
+        letter-spacing: -0.3px;
+        color: #FFFFFF;
+    }
+
+    p {
+        font-family: 'Rajdhani', sans-serif;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 18px;
+        line-height: 32px;
+        /* or 178% */
+        letter-spacing: -0.3px;
+        color: #FFFFFF;
+    }
+}
+
+//TESTIMONIALS
+.testimonials {
+    padding: 6rem 1rem;
+    background-color: #fff;
+
+    h2 {
+        margin-bottom: 4rem;
+        font-family: 'Rajdhani', sans-serif;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 48px;
+        line-height: 32px;
+        /* identical to box height, or 67% */
+        text-align: center;
+        letter-spacing: -0.3px;
+        /* Secondary */
+        color: #23231B;
+    }
+
+    .quotes {
+        position: absolute;
+        top: 0%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 2;
+    }
+
+    .quoteContainer {
+        position: relative;
+        padding: 6rem 6rem;
+        background: #FFFFFF;
+        /* shadow-2xl */
+        box-shadow: 0px 25px 50px rgba(0, 0, 0, 0.25);
+    }
+
+    .leftArrow {
+        background: $red-firebrick;
+        padding: 1rem;
+        position: absolute;
+        left: 0;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        cursor: pointer;
+    }
+
+    .rightArrow {
+        background: $red-firebrick;
+        padding: 1rem;
+        position: absolute;
+        right: -3%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        cursor: pointer;
+    }
+
+    p {
+        font-family: 'Rajdhani', sans-serif;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 32px;
+        /* or 133% */
+        text-align: center;
+        letter-spacing: -0.3px;
+        /* Secondary */
+        color: #23231B;
+    }
+
+    .signatureDetails h5 {
+        font-family: 'Rajdhani', sans-serif;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 16px;
+        line-height: 32px;
+        /* identical to box height, or 200% */
+        text-align: center;
+        letter-spacing: -0.3px;
+        /* Secondary */
+        color: #23231B;
+    }
+
+    .joinBtn {
+        margin-top: 6rem;
+        display: inline-block;
+        font-size: 32px;
+        font-weight: 700;
+        padding: .5rem 4rem;
+        background: #B92A20;
+        color: #fff;
+        text-transform: uppercase;
+        text-align: center;
+        border-radius: 5px;
+    }
+}
+
+// KINSHIP PAGE
+.facebook {
+    padding: 6rem 2rem;
+
+    h4 {
+        margin: 0 0 0 15px;
+    }
+
+    a {
+        font-style: normal;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 32px;
+        /* identical to box height, or 200% */
+        text-align: center;
+        letter-spacing: -0.3px;
+        text-decoration-line: underline;
+        /* Anchors */
+        color: #B92A20;
+    }
+}
+
+.facebookActivity {
+    padding: 6rem 2rem;
+    background-color: $accent2;
+
+    h4 {
+        margin: 0 0 0 15px;
+    }
+
+    a {
+        font-style: normal;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 32px;
+        /* identical to box height, or 200% */
+        text-align: center;
+        letter-spacing: -0.3px;
+        text-decoration-line: underline;
+        /* Anchors */
+        color: #B92A20;
+    }
+
+    .facebookPostsNav {
+        list-style: none;
+        padding: 20px 0;
+        margin: 0;
+        border-bottom: 2px solid $olivedrab;
+    }
+
+    li a {
+        text-decoration: none;
+        padding: 15px 30px;
+    }
+
+    p {
+        margin: 10px 0;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 32px;
+        /* identical to box height, or 133% */
+        letter-spacing: -0.3px;
+        /* Text */
+        color: #23231B;
+    }
+}
+
+.zoomMeetings {
+    padding: 6rem 2rem;
+}
+
+.zoomHeader {
+
+    a {
+        font-style: normal;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 32px;
+        /* identical to box height, or 200% */
+        text-align: center;
+        letter-spacing: -0.3px;
+        text-decoration-line: underline;
+        /* Anchors */
+        color: #B92A20;
+    }
+}
+
+
+//EVENTS PAGE
+.hero {
+    background-color: $primary;
+    padding: 4rem 0;
+}
+
+//SUPPORT PAGE
+.supportIconsWrapper {
+
+    background-color: $accent2;
+
+    .iconBox {
+        height: 100%;
+        padding: 2.5rem 2.5rem .5rem 2.5rem;
+        text-align: center;
+        background-color: #fff;
+    }
+
+    img {
+        width: 72px;
+        height: 72px;
+        text-align: center;
+    }
+
+    h5 {
+        margin: 30px 0 0 0;
+        font-family: 'Rajdhani', sans-serif;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 16px;
+        line-height: 32px;
+        /* identical to box height, or 200% */
+        text-align: center;
+        letter-spacing: -0.3px;
+        text-transform: uppercase;
+        /* Text */
+        color: #23231B;
+        text-transform: uppercase;
+    }
+}
+
+.mindWrapper {
+    h3 {
+        margin-bottom: -4px;
+        font-family: 'Rajdhani', sans-serif;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 36px;
+        line-height: 32px;
+        /* identical to box height, or 89% */
+        letter-spacing: -0.3px;
+        text-transform: uppercase;
+        /* Text */
+        color: #23231B;
+    }
+
+    p { 
+        font-family: 'Rajdhani', sans-serif;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 24px;
+        /* or 150% */
+        letter-spacing: -0.3px;
+        color: #000000;
+    }
+
+    .joinBtn {
+        margin-top: 1rem;
+        display: inline-block;
+        font-size: 18px;
+        font-weight: 700;
+        padding: .5rem 2.5rem;
+        background: #B92A20;
+        color: #fff;
+        text-transform: uppercase;
+        text-align: center;
+        border-radius: 2px;
+    }
+}
+
+.charities {
+    background-color: $accent2;
+
+    img {
+        width: 32px;
+        height: 32px;
+    }
+
+    h5 {
+        margin: 0 0 0 30px;
+        font-family: 'Rajdhani', sans-serif;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 24px;
+        line-height: 32px;
+        /* identical to box height, or 133% */
+        letter-spacing: -0.3px;
+        /* Text */
+        color: #23231B;
+    }
+
+    h4 { 
+        margin-bottom: -4px;
+        font-family: 'Rajdhani', sans-serif;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 24px;
+        line-height: 32px;
+        /* identical to box height, or 133% */
+        letter-spacing: -0.3px;
+        text-transform: uppercase;
+        /* Text */
+        color: #23231B;
+    }
+
+    p {
+        font-family: 'Rajdhani', sans-serif;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 32px;
+        /* identical to box height, or 200% */
+        letter-spacing: -0.3px;
+        /* Text */
+        color: #23231B;
+    }
+}
+
+.listings {
+
+    h2 {
+        font-family: 'Rajdhani', sans-serif;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 36px;
+        line-height: 42px;
+        /* or 117% */
+        letter-spacing: -0.3px;
+        /* Text */
+        color: #23231B;
+    }
+
+    p {
+        font-family: 'Rajdhani', sans-serif;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 24px;
+        /* or 150% */
+
+        letter-spacing: -0.3px;
+
+        /* Text */
+
+        color: #23231B;
+    }
+}
+
+// POSTS PAGE
+
+.post-content {
+    border: 1px solid #fff;
+    padding: 4rem 1.4rem 1.4rem 1.4rem;
+    background: #fff;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+
+    .post-title {
+        border-bottom: 1px solid $accent;
+        padding-bottom: .75rem;
+        margin-bottom: 1.4rem;
+    }
+
+    p {
+        line-height: 32px;
+    }
+
+    a {
+        color: #23231B;
+        background: #fff;
+        border: none;
+        font-weight: 600;
+        padding: 0;
+        transition: all .4s ease-in-out;
+
+        &:hover {
+            background-color: #fff;
+            color: #23231B;
+            transform: translateX(15px);
+        }
+    }
+}
+
+// SINGLE PAGE POSTS
+
+#single-wrapper {
+    background-color: $accent2;
+}
+
+#single-wrapper {
+
+    article {
+        margin-top: -4rem;
+        padding: 5rem;
+        background: #fff;
+    }
+
+    .entry-title {
+        display: none;
+    }
+
+    .entry-meta {
+        display: none;
+    }
+
+    img {
+        width: 100%;
+        display: block;
+        margin-bottom: 15px;
+    }
+
+    .entry-content {
+        font-family: 'Rajdhani', sans-serif;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 31px;
+        /* or 172% */
+        letter-spacing: -0.3px;
+        /* Text */
+        color: #23231B;
+        border-bottom: 3px solid $accent;
+        padding-bottom: 2rem;
+    }
+
+    .navigation {
+        margin-top: 20px;
+        padding: 1rem;
+        }
+
+    .nav-previous,
+    .nav-next {
+        width: 46%;
+        background: #fff;
+        padding: 1rem;
+
+        a {
+            color: $red-firebrick;
+        }
+        
+    }
+
+    .nav-next {
+        text-align: right;
+    }
+
+
+}
+
+
+.events {
+
+    h2 {
+        font-family: 'Rajdhani', sans-serif;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 28px;
+        line-height: 32px;
+        /* identical to box height, or 114% */
+        letter-spacing: -0.3px;
+        /* Text */
+        color: #23231B;
+    }
+
+    ul {
+        display: flex;
+        margin: 20px 0;
+        padding: 0;
+        list-style: none;
+
+        li:not(:first-child) {
+             margin-left: 30px;
+        }    
+            span {
+                margin-left: 10px;
+                font-family: 'Rajdhani', sans-serif;
+                font-style: normal;
+                font-weight: 500;
+                font-size: 16px;
+                line-height: 24px;
+                /* identical to box height, or 150% */
+                letter-spacing: -0.3px;
+                /* Text */
+                color: #23231B;
+            }
+        }
+             p {
+                font-family: 'Rajdhani', sans-serif;
+                font-style: normal;
+                font-weight: 500;
+                font-size: 18px;
+                line-height: 31px;
+                /* or 172% */
+                letter-spacing: -0.3px;
+                color: #000000;
+        }
+
+        a {
+            color: $red-firebrick;
+        }
+    }
+
+    //CONTACT PAGE
+    .wpcf7 input[type=text],
+    .wpcf7 input[type=email],
+    .wpcf7 textarea {
+        /* White */
+        background: #FFFFFF;
+        /* Accent 2 */
+        border: 1px solid #968E3D;
+        box-sizing: border-box;
+        border-radius: 4px;
+        /* Inside Auto Layout */
+        flex: none;
+        order: 0;
+        align-self: stretch;
+        flex-grow: 1;
+        margin: 0 0 10px 0px;
+    }
+
+    .wpcf7 input[type=submit] { 
+        width: 40%;
+        font-family: 'Rajdhani', sans-serif;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 18px;
+        line-height: 24px;
+        /* identical to box height, or 133% */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        letter-spacing: -0.3px;
+        color: #FFFFFF;
+        background: #B92A20;
+        border: none;
+        border-radius: 3px;
+        text-transform: uppercase;
+
+        &:hover {
+            background: (#B92A20, 15%);
+        }
+    }
+
+    .contactFormDetails,
+    .footer_social {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    .contactFormDetails {
+
+        li {
+            margin: 20px 0;
+        }
+
+        li a {
+            width: 100%;
+            display: flex;
+            align-items: center;
+        }
+
+        .icon {
+            background: #B92A20;
+            color: #fff;
+            padding: 15px;
+            border-radius: 50%;
+        }
+
+        .contactIcon {
+            margin-left: 20px;
+        }
+    }
+
+    .form-group, .wpcf7 .wpcf7-form p {
+        margin-bottom: 0 !important;
+    }
+
+    .contactFormTitle { 
+        font-family: 'Rajdhani', sans-serif;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 24px;
+        line-height: 140%;
+        /* identical to box height, or 34px */
+        display: flex;
+        align-items: center;
+        /* Text */
+        color: #23231B;
+    }
+
+    .contactFormCopy {
+        font-family: 'Rajdhani', sans-serif;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 140%;
+        /* or 25px */
+        display: flex;
+        align-items: center;
+        /* Text */
+        color: #23231B;
+    }
+
+    .contactIcon {
+        font-family: 'Rajdhani', sans-serif;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 32px;
+        /* identical to box height, or 133% */
+        display: flex;
+        align-items: center;
+        letter-spacing: -0.3px;
+        /* Text */
+        color: #23231B;
+    }
+
+    .footer_social li:not(:first-child) {
+        margin-left: 25px;
+    }
+
+    .icon {
+        background: #B92A20;
+        color: #fff;
+        padding: 15px;
+        border-radius: 50%;
+    }
+    
+    
+
+//FOOTER STYLES
+.underline {
+    width: 40px;
+    height: 1px;
+    background: $olivedrab;
+    margin: 0;
+}
+
+.underlineExtend {
+    width: 100%;
+    height: 1px;
+    background: $olivedrab;
+    margin: 2rem 0;
+}
+
+#wrapper-footer {
+    background-color: $primary;
+    padding: 6rem 2rem;
+    h4 {
+        color: #fff;
+        font-weight: 500;
+    } 
+}
+
+#wrapper-footer  {
+
+    ul {
+        list-style: none;
+        padding: 0;
+        margin: 0; 
+    }
+
+    .footer_links,
+    .footer_help,
+    .footer_contacts {
+        li {
+            padding: 20px 0;
+            border-bottom: 1px solid $olivedrab;
+
+            a {
+                color: #fff;
+            }
+        }
+    }
+}
+
+#wrapper-footer {
+    .footer_social {
+        display: flex;
+        justify-content: space-between;
+        a {
+            color: #fff;
+        }
+    }
+}
+
+#wrapper-footer { 
+    .footer_contacts {
+        li {
+            border-bottom: 0;
+            span {
+                margin-left: 15px;
+            }
+            }
+        }
+    }
+
+    .footer-copyright {
+
+        margin: 6rem 0 0 0;
+
+        ul {
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+
+            li {
+                padding: 5px 0;
+                color: #fff;
+
+                a {
+                    color: #fff;
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+
+
