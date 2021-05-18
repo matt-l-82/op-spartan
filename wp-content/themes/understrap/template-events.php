@@ -33,17 +33,17 @@ get_header(); ?>
                     <?php while ( $the_query->have_posts() ) : $the_query->the_post(); ?>
 
                     <div class="row pt-5 pb-5">
-                        <div class="col-xl-5 text-center">
-                            <a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>">
+                        <div class="col-md-5 col-sm-12">
+                            <a href="<?php the_permalink(); ?>" title="<?php the_field('title'); ?>">
                                 <?php the_post_thumbnail(); ?>
                             </a>
                         </div>
-                        <div class="col-xl-7">
-                            <h2><?php the_title(); ?></h2>
+                        <div class="col-md-7 col-sm-12">
+                            <h2><?php the_field('title'); ?></h2>
                                 <ul class="eventDetails d-flex">
-                                    <li><img src="<?php bloginfo('stylesheet_directory'); ?>/images/calendar-3.png" alt="calender icon"><span>24/05/21</span></li>
-                                    <li><img src="<?php bloginfo('stylesheet_directory'); ?>/images/time-clock-circle.png" alt="clock icon"><span>11:00</span></li>
-                                    <li><img src="<?php bloginfo('stylesheet_directory'); ?>/images/currency-pound-circle.png" alt="pound icon"><span>free</span></li>
+                                    <li><img src="<?php bloginfo('stylesheet_directory'); ?>/images/calendar-3.png" alt="calender icon"><?php the_field('date'); ?></li>
+                                    <li><img src="<?php bloginfo('stylesheet_directory'); ?>/images/time-clock-circle.png" alt="clock icon"><?php the_field('time'); ?></li>
+                                    <li><img src="<?php bloginfo('stylesheet_directory'); ?>/images/currency-pound-circle.png" alt="pound icon"><?php the_field('price'); ?></li>
                                 </ul>
                                 <?php the_content() ?>
                                 <p  class="text-right"><a href="<?php the_permalink(); ?>">More Details<span><i class="fal fa-long-arrow-right ml-2"></i></span></a></p>
@@ -61,7 +61,7 @@ get_header(); ?>
 
                 <?php else : ?>
                     <p><?php _e( 'Sorry, no events matched your criteria.' ); ?></p>
-                <?php endif; ?>
+                <?php endif; ?>  
 
             </main>
 
@@ -71,5 +71,5 @@ get_header(); ?>
 
 </div><!-- #page-wrapper -->
 
-<?php
+<?php 
 get_footer(); ?>

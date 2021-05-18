@@ -1,0 +1,239 @@
+# Copyright (C) 2021 Give-Annual-Receipts
+# This file is distributed under the same license as the Give-Annual-Receipts package.
+msgid ""
+msgstr ""
+"Project-Id-Version: Give-Annual-Receipts\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language-Team: GiveWP <info@givewp.com>\n"
+"Report-Msgid-Bugs-To: https://github.com/impress-org/give-annual-receipts/issues/new\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-KeywordsList: __;_e;_ex:1,2c;_n:1,2;_n_noop:1,2;_nx:1,2,4c;_nx_noop:1,2,3c;_x:1,2c;esc_attr__;esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: *.js\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: give-annual-receipts.php:414, includes/give-annual-receipts-settings-functions.php:39, includes/admin/give-annual-receipts-admin.php:237, includes/admin/settings.php:19
+msgid "Annual Receipts"
+msgstr ""
+
+#: give-annual-receipts.php:445
+msgid "Settings"
+msgstr ""
+
+#: give-annual-receipts.php:476
+msgid "Documentation"
+msgstr ""
+
+#: give-annual-receipts.php:486
+msgid "Add-ons"
+msgstr ""
+
+#: includes/give-annual-receipts-settings-functions.php:13
+msgid "No goods or services were provided in exchange for these contributions."
+msgstr ""
+
+#: includes/give-annual-receipts-settings-functions.php:14
+msgid "Sincerely,"
+msgstr ""
+
+#: includes/give-annual-receipts-settings-functions.php:15
+msgid "FirstName LastName"
+msgstr ""
+
+#: includes/give-annual-receipts-settings-functions.php:16
+msgid "Position, Organization"
+msgstr ""
+
+#: includes/give-annual-receipts-settings-functions.php:19
+msgid "123 Organization St, City, State 12345"
+msgstr ""
+
+#: includes/give-annual-receipts-settings-functions.php:20
+msgid "Phone (555) 555-5555"
+msgstr ""
+
+#: includes/give-annual-receipts-settings-functions.php:40
+msgid "This enables annual receipts on the Donation History page for donors and within the Donor profile for administrators."
+msgstr ""
+
+#: includes/give-annual-receipts-settings-functions.php:44
+msgid "Enabled"
+msgstr ""
+
+#: includes/give-annual-receipts-settings-functions.php:45
+msgid "Disabled"
+msgstr ""
+
+#: includes/give-annual-receipts-settings-functions.php:51
+msgid "Tax Year End Date"
+msgstr ""
+
+#: includes/give-annual-receipts-settings-functions.php:52
+msgid "Enter the last month and day of the tax year upon which the annual receipt is based."
+msgstr ""
+
+#: includes/give-annual-receipts-settings-functions.php:58
+msgid "Logo"
+msgstr ""
+
+#: includes/give-annual-receipts-settings-functions.php:59
+msgid "Upload the logo that you would like to display on the receipt."
+msgstr ""
+
+#: includes/give-annual-receipts-settings-functions.php:66
+msgid "Content Before Receipt Table"
+msgstr ""
+
+#: includes/give-annual-receipts-settings-functions.php:67
+msgid "Enter content to appear before the receipt table."
+msgstr ""
+
+#: includes/give-annual-receipts-settings-functions.php:68
+msgid "On behalf of our organization, thank you so much for your generous contributions:"
+msgstr ""
+
+#: includes/give-annual-receipts-settings-functions.php:74
+msgid "Content After Receipt Table"
+msgstr ""
+
+#: includes/give-annual-receipts-settings-functions.php:75
+msgid "Enter content to appear after the receipt table."
+msgstr ""
+
+#: includes/give-annual-receipts-settings-functions.php:82
+msgid "Footer"
+msgstr ""
+
+#: includes/give-annual-receipts-settings-functions.php:83
+msgid "Enter the message you would like to be shown on the footer of the receipt."
+msgstr ""
+
+#: includes/give-annual-receipts-settings-functions.php:90
+msgid "Subfooter"
+msgstr ""
+
+#: includes/give-annual-receipts-settings-functions.php:91
+msgid "Enter the message you would like to be shown in smaller text below the footer."
+msgstr ""
+
+#: includes/give-annual-receipts-settings-functions.php:93
+msgid "Subfooter text such as tax ID number goes here."
+msgstr ""
+
+#: includes/give-annual-receipts-settings-functions.php:98
+msgid "Preview Template"
+msgstr ""
+
+#: includes/give-annual-receipts-settings-functions.php:99
+msgid "Click the button above to preview how the PDF will appear to donors."
+msgstr ""
+
+#: includes/give-annual-receipts-settings-functions.php:103, includes/give-annual-receipts-settings-functions.php:106
+msgid "Annual Receipts Docs"
+msgstr ""
+
+#: includes/give-annual-receipts-template.php:161
+msgid "Date"
+msgstr ""
+
+#: includes/give-annual-receipts-template.php:164, includes/admin/give-annual-receipts-admin.php:281
+msgid "Amount"
+msgstr ""
+
+#: includes/give-annual-receipts-template.php:168
+msgid "Donation ID"
+msgstr ""
+
+#: includes/give-annual-receipts-template.php:171
+msgid "Payment Method"
+msgstr ""
+
+#: includes/give-annual-receipts-template.php:201
+msgid "Total:"
+msgstr ""
+
+#: includes/admin/give-annual-receipts-activation.php:13, includes/admin/give-annual-receipts-activation.php:39
+msgid "Activation Error:"
+msgstr ""
+
+#: includes/admin/give-annual-receipts-activation.php:14, includes/admin/give-annual-receipts-activation.php:40
+msgid "You must have"
+msgstr ""
+
+#: includes/admin/give-annual-receipts-activation.php:16, includes/admin/give-annual-receipts-activation.php:42
+msgid "Give"
+msgstr ""
+
+#: includes/admin/give-annual-receipts-activation.php:17
+msgid "version"
+msgstr ""
+
+#: includes/admin/give-annual-receipts-activation.php:19
+msgid "for the Annual Receipts add-on to activate"
+msgstr ""
+
+#: includes/admin/give-annual-receipts-activation.php:43
+msgid " plugin installed and activated for the Annual Receipts add-on to activate"
+msgstr ""
+
+#: includes/admin/give-annual-receipts-admin.php:197, includes/admin/give-annual-receipts-admin.php:197
+msgid "Preview PDF"
+msgstr ""
+
+#: includes/admin/give-annual-receipts-admin.php:280
+msgid "Year"
+msgstr ""
+
+#: includes/admin/give-annual-receipts-admin.php:282
+msgid "Donations"
+msgstr ""
+
+#: includes/admin/give-annual-receipts-admin.php:283
+msgid "Actions"
+msgstr ""
+
+#: includes/admin/give-annual-receipts-admin.php:308
+msgid "View Statement"
+msgstr ""
+
+#: includes/admin/settings.php:31
+msgid "Annual Receipts Settings"
+msgstr ""
+
+#: includes/frontend/give-annual-receipts-frontend.php:88, includes/frontend/give-annual-receipts-frontend.php:359
+msgid "View your <a href=\"%s\">annual receipt and detailed giving history&nbsp;&raquo;</a>"
+msgstr ""
+
+#: includes/frontend/give-annual-receipts-frontend.php:119
+msgid "Annual receipts for download or print:"
+msgstr ""
+
+#: includes/frontend/give-annual-receipts-frontend.php:136
+msgid "%s Annual Receipt (PDF)"
+msgstr ""
+
+#: includes/frontend/give-annual-receipts-frontend.php:199
+msgid "Donations:"
+msgstr ""
+
+#. translators: annual receipt amount, date, and gateway
+#: includes/frontend/give-annual-receipts-frontend.php:287
+msgid "%1$s donated on %2$s using %3$s"
+msgstr ""
+
+#: includes/frontend/give-annual-receipts-frontend.php:295
+msgid "Donation ID:"
+msgstr ""
+
+#: includes/frontend/give-annual-receipts-frontend.php:308
+msgid "Between %1$s and %2$s, you donated %3$s in a single donation."
+msgid_plural "Between %1$s and %2$s, you donated %3$s across %4$s donations."
+msgstr[0] ""
+msgstr[1] ""
+
+#: includes/frontend/give-annual-receipts-frontend.php:322
+msgid "Back to All Receipts"
+msgstr ""

@@ -61,3 +61,18 @@ if ( is_single() ) {
 	return $post_info;
 }}
 add_action( 'author_link', 'remove_post_info_single_page' );
+
+add_action('widgets_init', 'wp_event_sidebar');
+function wp_event_sidebar() {
+	register_sidebar(
+		array(
+			'name' 			=> 'Event Sidebar',
+			'id'  			=> 'sidebar-1',
+			'description'  	=> 'This is the event page sidebar. You can add your widgets here.',
+			'before_widget' => '<div class="widget-wrapper">',
+			'after_widget'  => '</div>',
+			'before_title'  => '<h2 class="widget-title">',
+			'after_title'   => '</div>'
+		)
+	);
+}

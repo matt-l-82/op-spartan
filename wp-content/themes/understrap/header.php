@@ -26,27 +26,36 @@ $container = get_theme_mod( 'understrap_container_type' );
 
 <body <?php body_class(); ?> <?php understrap_body_attributes(); ?>>
 <?php do_action( 'wp_body_open' ); ?>
+
+<!-- FB POSTS -->
+<div id="fb-root"></div>
+<script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v10.0&appId=1769278130035060&autoLogAppEvents=1" nonce="DXMyPrZn"></script>
+
+<!-- Share Button on Kinship Page -->
+<div id="fb-root"></div>
+<script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v10.0&appId=1769278130035060&autoLogAppEvents=1" nonce="JE9J7ABu"></script>
 <div class="site" id="page">
 
 	<!-- ******************* The Navbar Area ******************* -->
-	<div id="wrapper-navbar">
+<div id="wrapper-navbar">
 
-		<a class="skip-link sr-only sr-only-focusable" href="#content"><?php esc_html_e( 'Skip to content', 'understrap' ); ?></a>
+	<a class="skip-link sr-only sr-only-focusable" href="#content"><?php esc_html_e( 'Skip to content', 'understrap' ); ?></a>
 
-		<nav id="main-nav" class="navbar navbar-expand-lg navbar-dark bg-primary" aria-labelledby="main-nav-label">
+	<nav id="main-nav" class="navbar navbar-expand-lg navbar-dark bg-primary" aria-labelledby="main-nav-label">
 			
-			<div class="container-fluid d-flex align-items-center">
+		<div class="container-fluid d-flex align-items-center">
 
-			<a class="navbar-brand" href="http://localhost/opspartan/">
-				<img src="<?php bloginfo('stylesheet_directory'); ?>/images/Op Spartan logos colour-05.png" class="d-inline-block align-top" alt="logo">
-			</a>
+				<a class="navbar-brand" href="http://localhost/opspartan/">
+					<img src="<?php bloginfo('stylesheet_directory'); ?>/images/Op Spartan logos colour-05.png" class="d-inline-block align-top" alt="logo">
+				</a>
 
-			<div class="mobile-menu-dropdown ml-auto">
-				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="<?php esc_attr_e( 'Toggle navigation', 'understrap' ); ?>">
-					<span>Menu</span><i class="fas fa-bars"></i>
-				</button>
-			</div>
-				
+				<div class="mobile-menu-dropdown ml-auto">
+					<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="<?php esc_attr_e( 'Toggle navigation', 'understrap' ); ?>">
+						<span>Menu</span><i class="fas fa-bars"></i>
+					</button>
+				</div>		
+			
+				<div class="collapse navbar-collapse" id="navbarNavDropdown">
 				<!-- The WordPress Menu goes here -->
 				<?php
 				wp_nav_menu(
@@ -62,13 +71,12 @@ $container = get_theme_mod( 'understrap_container_type' );
 					)
 				);
 				?>
-
-				<ul class="extra-menu">
-					<li class="login"><a href="/">Log In</a></li>
-					<li class="signup"><a href="/">Sign Up</a></li>
+				<ul class="nav navbar-right extra-menu">
+					<li class="login"><a href="http://localhost/opspartan/login/"><?php echo do_shortcode('[mepr-login-link]'); ?></a></li>
+					<li class="signup"><a href="http://localhost/opspartan/sign-up/"><?php echo do_shortcode('[mepr-membership-link id="143"]'); ?></a></li>
 				</ul>
+			</div>
+		</div><!-- end container -->		
+	</nav><!-- .site-navigation -->
 
-			</nav><!-- .site-navigation -->
-		</div>
-
-	</div><!-- #wrapper-navbar end -->
+</div><!-- #wrapper-navbar end -->

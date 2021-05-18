@@ -18,18 +18,24 @@
  * @package WordPress
  */
 
+ require_once dirname(__FILE__) . '/vendor/autoload.php';
+
+$dotenv = Dotenv\Dotenv::createImmutable(__DIR__);
+$dotenv->load();
+
+
 // ** MySQL settings - You can get this info from your web host ** //
 /** The name of the database for WordPress */
-define( 'DB_NAME', 'opspartan' );
+define( 'DB_NAME', $_ENV["DB_NAME"] );
 
 /** MySQL database username */
-define( 'DB_USER', 'spartan' );
+define( 'DB_USER', $_ENV["DB_USER"] );
 
 /** MySQL database password */
-define( 'DB_PASSWORD', 'VPoSkqksaYi1FhFR' );
+define( 'DB_PASSWORD', $_ENV["DB_PASSWORD"] );
 
 /** MySQL hostname */
-define( 'DB_HOST', 'localhost:3307' );
+define( 'DB_HOST', $_ENV["DB_HOST"] );
 
 /** Database Charset to use in creating database tables. */
 define( 'DB_CHARSET', 'utf8' );

@@ -5,7 +5,7 @@ body {
     font-family: 'Rajdhani', sans-serif;
 }
 
-// PAGE TITLES - ON EVEVERY HERO 
+// PAGE TITLES - ON EVVERY HERO 
 .page-titles {
     h5 {
         font-family: 'Rajdhani', sans-serif;
@@ -29,16 +29,13 @@ body {
         font-family: 'Rajdhani', sans-serif;
         font-style: normal;
         font-weight: bold;
-        font-size: 78px;
+        @include responsive-font-size(78px);
         line-height: 32px;
         /* identical to box height, or 41% */
-
         text-align: center;
         letter-spacing: -0.3px;
         text-transform: uppercase;
-
         /* default/shade/white */
-
         color: #FFFFFF;
     }
 }
@@ -59,6 +56,7 @@ body {
         a {
             font-family: 'Rajdhani', sans-serif;
             color: $primary !important;
+            font-size: 16px;
             text-transform: uppercase;
             font-weight: 600;
             letter-spacing: 0.5px;
@@ -78,7 +76,7 @@ body {
 
 .mobile-menu-dropdown {
     color: $primary;
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 700;
 
     button, span, .fa-bars {
@@ -108,7 +106,7 @@ body {
     }
 
     a {
-        font-size: 18px;
+        font-size: 16px;
         text-transform: uppercase;
         font-weight: 700;
         letter-spacing: -.3px;
@@ -129,7 +127,7 @@ body {
 //HERO / JUMBOTRON
 
 .jumbotron-fluid {
-    background-image: url('../images/shutterstock_1189517212.jpg');
+    background-image: url('../images/bg.png');
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -140,33 +138,45 @@ body {
 
     h1 {
         color: #fff;
-        font-size: 5.5em;
+        @include responsive-font-size(5.5em);
         text-transform: uppercase;
         font-weight: 600;
         letter-spacing: 4px;
+    }
 
-      + p {
-            color: #fff;
-            letter-spacing: 7px;
-            font-weight: 600;
+    p {
+        color: #fff;
+        letter-spacing: 7px;
+        font-weight: 600;
+        }
+
+    .btn-member {
+        color: #fff;
+        background-color: $red-firebrick;
+        border-color: $red-firebrick;
+        margin-top: 2rem;
+        padding: 1rem 2.5rem;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 18px;
+        line-height: 32px;
         }
     }
-}
 
 //CORE SERVICES 
 .core-services {
     background-color: $primary;
-    padding: 6rem 2rem;
+    padding: 6rem 0rem;
 
     h6 {
-
         color: #fff;
+    }
 
-    + h1 {
+     h1 {
         font-family: 'Rajdhani', sans-serif;
         font-style: normal;
         font-weight: bold;
-        font-size: 64px;
+        @include responsive-font-size(4rem);
         line-height: 56px;
         /* or 87% */
         letter-spacing: -0.3px;
@@ -174,7 +184,6 @@ body {
 
         }
     }
-}
 
 .core-services {
 
@@ -183,6 +192,7 @@ body {
         box-sizing: border-box;
         border-radius: 2px;
         padding: 6rem 6rem 0.5rem 6rem;
+        margin-bottom: 0.5rem !important;
 
         img {
             width: 100px;
@@ -208,16 +218,24 @@ body {
 
 //COMMUNITY
 .community {
-    // background: url('../images/map.png');
-    // background-position: center;
-    // background-size: cover;
-    // background-repeat: no-repeat;
 
     .numbers-wrapper {
-        background-color: $red-firebrick;
+        position: relative;
+        background: url('../images/map.png') no-repeat center;
+        background-size: cover;
         color: #fff;
         padding: 4rem 1rem;
         margin-top: -50px;
+    }
+
+    .numbers-wrapper::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(201, 12, 15, 0.8);
     }
 }
 
@@ -233,6 +251,7 @@ body {
         letter-spacing: -0.3px; 
         /* default/shade/white */
         color: #FFFFFF;
+        z-index: 999;
      }
     
      h4 {
@@ -316,15 +335,12 @@ body {
 
     position: relative;
     background-color: $primary;
-    padding: 6rem 0;
+    padding: 3.4rem 0;
 
     img {
-        position: absolute;
-        left: -129px;
-        top: -138px;
-        -webkit-box-shadow: 38px 38px 0px -5px rgba(50,47,32,1);
-        -moz-box-shadow: 38px 38px 0px -5px rgba(50,47,32,1);
-        box-shadow: 38px 38px 0px -5px rgba(50,47,32,1);
+        -webkit-box-shadow: 107px 104px 0 -50px #322f20;;
+        -moz-box-shadow: 107px 104px 0 -50px #322f20;
+        box-shadow: 107px 104px 0 -50px #322f20;
     }
 
     h1 {
@@ -377,32 +393,12 @@ body {
         z-index: 2;
     }
 
-    .quoteContainer {
+    .carousel-inner {
         position: relative;
         padding: 6rem 6rem;
         background: #FFFFFF;
         /* shadow-2xl */
         box-shadow: 0px 25px 50px rgba(0, 0, 0, 0.25);
-    }
-
-    .leftArrow {
-        background: $red-firebrick;
-        padding: 1rem;
-        position: absolute;
-        left: 0;
-        top: 50%;
-        transform: translate(-50%, -50%);
-        cursor: pointer;
-    }
-
-    .rightArrow {
-        background: $red-firebrick;
-        padding: 1rem;
-        position: absolute;
-        right: -3%;
-        top: 50%;
-        transform: translate(-50%, -50%);
-        cursor: pointer;
     }
 
     p {
@@ -416,6 +412,39 @@ body {
         letter-spacing: -0.3px;
         /* Secondary */
         color: #23231B;
+    }
+
+    .carousel-control-next {
+        right: -8%;
+    }
+
+    .carousel-control-prev {
+        left: -8%;
+    }
+
+    .carousel-control-next, .carousel-control-prev {
+        opacity: 1;
+    }
+    .carousel-control-prev-icon {
+        background-image: url('../images/arrowLeft.png') !important;
+    }
+
+    .carousel-control-next-icon {
+        background-image: url('../images/arrowRight.png') !important;
+    }
+
+    .carousel-control-prev-icon,
+    .carousel-control-next-icon {
+        background-position: center !important;
+        background-repeat: no-repeat !important;
+        height: 46px;
+        width: 46px;
+        background-size: 100%, 100%;
+        background: #B92A20;
+    }
+
+    .carousel-nav-icon {
+        color: #B92A20 !important;
     }
 
     .signatureDetails h5 {
@@ -444,6 +473,78 @@ body {
         border-radius: 5px;
     }
 }
+
+// ALLIES PAGE
+.allies {
+
+    h3 {
+        font-style: normal;
+        font-weight: bold;
+        font-size: 36px;
+        line-height: 42px;
+        /* identical to box height, or 117% */
+        letter-spacing: -0.3px;
+        /* Text */
+        color: #23231B;
+    }
+
+    p {
+        font-style: normal;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 24px;
+        /* or 133% */
+        letter-spacing: -0.3px;
+        /* Text */
+        color: #23231B;
+    }
+
+    img {
+        background: #23231B;
+        border-radius: 4px;
+    }
+}
+
+.offers {
+    padding: 6rem 2.5rem !important;
+    background-color: $accent2;
+
+    .card-link {
+        display: block;
+        width: 70%;
+        background-color: #b92a20;
+        color: #fff;
+        border-radius: 3px;
+        margin: 20px  auto;
+        padding: 8px 25px;
+    }
+}
+
+.business-listing {
+
+    padding: 6rem 2.5rem !important;
+
+    h3 {
+        font-family: 'Rajdhani', sans-serif;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 36px;
+        line-height: 42px;
+        letter-spacing: -0.3px;
+        color: #23231B;
+    }
+
+    p {
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 24px;
+        /* or 150% */
+        letter-spacing: -0.3px;
+        /* Text */
+        color: #23231B;
+    }
+} 
 
 // KINSHIP PAGE
 .facebook {
@@ -513,6 +614,15 @@ body {
     }
 }
 
+//FB POSTS from API
+._2162 ._2_1h ._rb9{
+    border-top: none !important;
+}
+
+._4-u2 {
+    border: 2px solid black;
+}
+
 .zoomMeetings {
     padding: 6rem 2rem;
 }
@@ -531,6 +641,256 @@ body {
         /* Anchors */
         color: #B92A20;
     }
+
+}
+
+.meetingTimerWrapper {
+    background: #FFFFFF;
+    /* Primary */
+    border: 1px solid #B92A20;
+    box-sizing: border-box;
+    /* shadow-xl */
+    box-shadow: 0px 20px 25px rgba(0, 0, 0, 0.1), 0px 10px 10px rgba(0, 0, 0, 0.04);
+    border-radius: 3px;
+
+    h5 {
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 32px;
+        /* identical to box height, or 200% */
+        letter-spacing: -0.3px;
+        /* Accent 1 */
+        color: #312F22;
+    }
+}    
+
+    .meetingTimerInner {
+
+        padding-left: 20px;
+        padding-right: 20px;
+
+        h3 {
+            font-family: 'Rajdhani', sans-serif;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 26px;
+            line-height: 42px;
+            /* or 162% */
+            letter-spacing: -0.3px;
+            /* Accent 1 */
+            color: #312F22;
+            border-right: 1px solid #CBD5E0;
+            padding-right: 5rem;
+        }
+
+        p {
+            font-family: 'Rajdhani', sans-serif;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 78px;
+            line-height: 42px;
+            /* identical to box height, or 54% */
+            letter-spacing: -0.3px;
+            /* Primary */
+            color: #B92A20;
+        }
+
+        span {
+            font-family: 'Rajdhani', sans-serif;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 24px;
+            line-height: 42px;
+            /* identical to box height, or 175% */
+            letter-spacing: -0.3px;
+            /* Primary */
+            color: #B92A20;
+            text-transform: uppercase;
+        }
+    }
+
+    .zoomMeetingEvents {
+
+        img {
+            position: relative;
+            border-radius: 4px;
+        }
+
+        .zoomMeetingEventsContent {
+
+            .time {
+                position: absolute;
+                top: 5%;
+                right: 5%;
+                /* background-color: #333; */
+                background: #23231B;
+                border-radius: 3px;
+                color: #fff;
+                padding: 0.5rem 1rem;
+                display: flex;
+                text-transform: uppercase;
+                font-size: 1.2rem;
+            }
+
+            h4 {
+                position: absolute;
+                bottom: 20%;
+                left: 5%;
+                color: #fff;
+                margin: 0;
+            }
+
+            .author {
+                position: absolute;
+                bottom: 15%;
+                left: 5%;
+                color: #fff;
+                margin: 0;
+            }
+
+            .date {
+                position: absolute;
+                bottom: 0%;
+                left: 0%;
+                color: #fff;
+                margin-left: 16px;
+                background: #23231B;
+                opacity: 0.7;
+                /* Grey 3 */
+                border: 1px solid #D0D9E2;
+                box-sizing: border-box;
+                border-radius: 0px 0px 3px 3px;
+
+            }
+        }
+    }
+
+// MISSSIONS PAGE
+.missions {
+
+    h2 {
+        font-style: normal;
+        font-weight: bold;
+        font-size: 36px;
+        line-height: 42px;
+        /* identical to box height, or 117% */  
+        letter-spacing: -0.3px;
+        /* Text */
+        color: #23231B;
+    }
+
+    p {
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 24px;
+        /* or 133% */
+        letter-spacing: -0.3px;
+        /* Text */
+        color: #23231B;
+    }
+
+    a.missionsBtn {
+        font-style: normal;
+        font-weight: bold;
+        font-size: 36px;
+        line-height: 42px;
+        letter-spacing: -0.3px;
+        background-color: $red-firebrick;
+        color: #fff;
+        padding: 1rem 2rem;
+    }
+
+    span {
+        font-size: 18px;
+        font-weight: 600;;
+    }
+}    
+
+.last-chance {
+    background: $accent2;
+}
+
+.member-missions { 
+
+    h2 {
+        font-style: normal;
+        font-weight: bold;
+        font-size: 36px;
+        line-height: 32px;
+        /* identical to box height, or 89% */
+        text-align: center;
+        letter-spacing: -0.3px;
+        /* Text */
+        color: #23231B;
+}
+
+    .card {
+        border: none;
+    }
+
+    .card-body {
+        padding: 10px 0;
+
+         h5 {
+            font-style: normal;
+            font-weight: 600;
+            font-size: 24px;
+            line-height: 24px;
+            margin-bottom: 0;
+            /* identical to box height, or 100% */
+            letter-spacing: -0.3px;
+            /* Text */
+            color: #23231B;
+        }
+
+        p {
+            font-style: normal;
+            font-weight: 600;
+            font-size: 16px;
+            line-height: 24px;
+            /* identical to box height, or 150% */
+            letter-spacing: -0.3px;
+            /* Text */
+            color: #23231B;
+        }
+    }
+}
+
+// MISSIONS CAROUSEL STYLES
+.carousel-nav-icon {
+    height: 48px;
+    width: 48px;
+ }
+ .carousel-item {
+    .col, .col-sm, .col-md {
+       margin: 8px;
+       height: 300px;
+       background-size: cover;
+       background-position: center center;
+    }
+ }
+
+ .carousel-title {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 56px;
+    line-height: 24px;
+    /* identical to box height, or 43% */
+    letter-spacing: -0.3px;
+    /* Text */
+    color: #23231B;
+    opacity: 0.3;
+
+    span {
+        font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 24px;
+    /* identical to box height, or 100% */
+    letter-spacing: -0.3px;
+    /* Text */
+    color: #23231B;
+    }
 }
 
 
@@ -540,6 +900,332 @@ body {
     padding: 4rem 0;
 }
 
+//SINGLE EVENTS PAGE
+#single-events-wrapper {
+    .sidebar-title {
+        border-bottom: 1px solid $olivedrab;
+        text-transform: uppercase;
+    }
+}
+.sidebar-events {
+
+    list-style: none;
+    padding: 0;
+    margin: 0;
+
+    li {
+        padding: 20px 0;
+        border-bottom: 1px dashed $olivedrab;
+    }
+}    
+
+.events-sidebar-contact {
+    p {
+        margin-bottom: 0;
+    }
+    p:nth-child(odd) {
+        font-style: normal;
+        font-weight: bold;
+        font-size: 18px;
+        line-height: 32px;
+        /* identical to box height, or 178% */
+        letter-spacing: -0.3px;
+        /* Text */
+        color: #23231B;
+    }
+} 
+
+//TRIVE EVENTS STYLES
+
+.tribe-common--breakpoint-medium.tribe-events .tribe-events-header--has-event-search .tribe-events-c-events-bar {
+    display: none;
+}
+
+// Date picker colour
+.tribe-events .datepicker .day.active {
+    background: $red-firebrick;
+}
+
+.tribe-events .datepicker .day.active:hover {
+    background: rgba(201, 12, 19, .7);
+}
+
+.tribe-common .tribe-common-cta--thin-alt {
+    color: $red-firebrick !important;
+    border-bottom: 1px solid $red-firebrick;
+}
+
+.tribe-events .tribe-events-c-ical__link {
+    display: none;
+}
+
+// SINGLE TRIBE EVENT STYLES
+.tribe-common .tribe-common-cta--thin-alt:hover {
+    border-bottom: 1px solid $red-firebrick;
+}
+
+.tribe-events-notices {
+    border-bottom: 1px solid $olivedrab;
+}
+
+.tribe-events-single-event-title,
+.tribe-events-event-meta,
+.tribe-events-content,
+.tribe-block, .tribe-tickets,
+.tribe-common, 
+.tribe-common-h4 {
+    font-family: 'Rajdhani', sans-serif !important;
+}
+
+h2.tribe-events-single-event-title {
+    font-size: 18px !important;
+}
+
+.tribe-events-meta-group .tribe-events-single-section-title {
+    font-size: 1.3rem;
+    padding-bottom: 15px;
+    border-bottom: 1px solid $olivedrab !important;
+    letter-spacing: 0.3px;
+}
+
+.tribe-events-start-date-label, .tribe-events-start-time-label, .tribe-events-event-cost-label {
+    display: none;
+}
+
+.tribe-events-start-date::before{
+    content: '';
+    background:url('../images/calendar-3.png') no-repeat;
+    width: 25px;
+    height: 25px;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 10px;
+}
+
+.tribe-events-start-time::before {
+    content: '';
+    background:url('../images/time-clock-circle.png') no-repeat;
+    width: 25px;
+    height: 25px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.tribe-events-event-cost::before {
+    content: '';
+    background:url('../images/currency-pound-circle.png') no-repeat;
+    width: 25px;
+    height: 25px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.tribe-events-event-meta dd{
+    margin: 0;
+    padding: 5px 0;
+}
+
+.tribe-events-event-meta:before, .tribe-events-event-meta~div:not(.tribe-events-event-meta):not(.event-tickets) {
+    border: none;
+}
+
+.tribe-events-event-url a,
+.tribe-organizer-url a,
+.tribe-events-gmap {
+    color: $red-firebrick !important;
+}
+
+.tribe-events-venue-map {
+    display: none;
+}
+
+.entry .entry-content .tribe-common .tribe-tickets__attendee__fields__footer_checkout-button.tribe-common-c-btn:disabled, .entry .entry-content .tribe-common .tribe-tickets__buy.tribe-common-c-btn:disabled, .tribe-common .tribe-tickets__attendee__fields__footer_checkout-button.tribe-common-c-btn:disabled, .tribe-common .tribe-tickets__buy.tribe-common-c-btn:disabled {
+    background: $red-firebrick;
+}
+
+.tribe-common .tribe-tickets__buy.tribe-common-c-btn {
+    background: $red-firebrick;
+}
+
+.tribe-common .tribe-tickets__buy.tribe-common-c-btn:hover {
+    background: rgba(201, 12, 19, .7);
+}
+
+#tribe-events-footer {
+    border: none;
+}
+
+//ROADMAP PAGE
+
+.roadmap {
+    background-color: $accent2;
+}
+.timeline {
+    background-color: $accent2;
+}
+.timeline-wrapper{
+  max-width: 1080px;
+  margin: 0 auto;
+  padding: 50px 20px;
+  position: relative;
+}
+.timeline-wrapper .center-line{
+  position: absolute;
+  height: 100%;
+  width: 4px;
+  background: #968E3D;
+  left: 50%;
+  top: 0;
+  transform: translateX(-50%);
+}
+.timeline-wrapper .row{
+  display: flex;
+  margin-top: 6rem;
+  margin-bottom: 6rem;
+}
+.timeline-wrapper .row-1{
+  justify-content: flex-start;
+}
+.timeline-wrapper .row-2{
+  justify-content: flex-end;
+}
+.timeline-wrapper .row section{
+  background: #fff;
+  border-radius: 0;
+  width: calc(50% - 81px);
+  padding: 0;
+  position: relative;
+  background: #FFFFFF;
+  /* shadow-md */
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.06), 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+.timeline-wrapper .row section::before{
+  position: absolute;
+  content: "";
+  height: 15px;
+  width: 15px;
+  background: #fff;
+  top: 28px;
+  z-index: -1;
+  transform: rotate(45deg);
+}
+.row-1 section::before{
+  right: -7px;
+}
+.row-2 section::before{
+  left: -7px;
+}
+.row section .icon,
+.center-line .scroll-icon{
+  position: absolute;
+  background: #312F22;
+  height: 85px;
+  width: 85px;
+  text-align: center;
+  line-height: 40px;
+  border-radius: 50%;
+  color: #fff;
+  font-size: 17px;
+  box-shadow: 0 0 0 4px #968E3D, inset 0 2px 0 rgba(0,0,0,0.08), 0 3px 0 4px rgba(0,0,0,0.05);
+}
+.center-line .scroll-icon{
+  bottom: -40px;
+  left: 50%;
+  font-size: 25px;
+  transform: translateX(-50%);
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+}
+.row-1 section .icon{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  top: 2px;
+  right: -123px;
+}
+.row-2 section .icon{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  top: 2px;
+  left: -123px;
+}
+.icon span {
+    font-weight: 700;
+    text-transform: uppercase;
+}
+.row section .details,
+.row section .bottom{
+  display: flex;
+  flex-direction: column;
+  padding: 25px 15px;
+}
+.row section .details .title{
+    font-family: 'Rajdhani', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 28px;
+    line-height: 32px;
+    letter-spacing: -0.3px;
+    color: #23231B;
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid $olivedrab;
+}
+.row section p{
+  margin: 20px 0 17px 0;
+}
+.row section .bottom a{
+  text-decoration: none;
+  background: #312F22;
+  color: #fff;
+  padding: 7px 15px;
+  border-radius: 5px;
+  /* font-size: 17px; */
+  font-weight: 400;
+  transition: all 0.3s ease;
+}
+.row section .bottom a:hover{
+  transform: scale(0.97);
+}
+@media(max-width: 790px){
+    .timeline-wrapper .center-line{
+    left: 60px;
+  }
+  .timeline-wrapper .row{
+    margin: 30px 0 3px 60px;
+  }
+  .timeline-wrapper .row section{
+    width: 67%;
+    left: 10%;
+  }
+  .row-1 section::before{
+    left: -7px;
+  }
+  .row-1 section .icon{
+    left: -133px;
+  }
+
+  .timeline-wrapper .row-2 {
+      justify-content: flex-start;
+  }
+  .row-2 section .icon {
+      left: -133px;
+  }
+}
+@media(max-width: 440px){
+    .timeline-wrapper .center-line,
+  .row section::before,
+  .row section .icon{
+    display: none;
+  }
+  .timeline-wrapper .row{
+    margin: 10px 0;
+  }
+}
+  
 //SUPPORT PAGE
 .supportIconsWrapper {
 
@@ -694,7 +1380,6 @@ body {
 }
 
 // POSTS PAGE
-
 .post-content {
     border: 1px solid #fff;
     padding: 4rem 1.4rem 1.4rem 1.4rem;
@@ -782,17 +1467,13 @@ body {
 
         a {
             color: $red-firebrick;
-        }
-        
+        }   
     }
 
     .nav-next {
         text-align: right;
     }
-
-
 }
-
 
 .events {
 
@@ -972,7 +1653,83 @@ body {
         padding: 15px;
         border-radius: 50%;
     }
-    
+
+
+// LOGIN PAGE
+.login-wrapper {
+
+    border-top: 17px solid #C90C0F; 
+    border-left: 1px solid #d9d9d9;
+    border-bottom: 1px solid #d9d9d9;
+    border-right: 1px solid #d9d9d9;
+    border-radius: 4px;
+
+    img {
+        width: 71px;
+        height: auto;
+        background: #000;
+        padding: 4px;
+        border-radius: 5px;
+    }
+
+    h3 {
+        font-family: 'Rajdhani', sans-serif;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 48px;
+        line-height: 32px;
+        /* identical to box height, or 67% */
+        letter-spacing: -0.3px;
+        /* Text */
+        color: #23231B;
+        text-transform: uppercase;
+    }
+
+    p {
+        font-family: 'Rajdhani', sans-serif;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 32px;
+        /* or 133% */
+        letter-spacing: -0.3px;
+        /* Text */
+        color: #23231B;
+    }
+
+    a {
+        font-size: 18px;
+        color: $red-firebrick;
+    }
+
+    .mepr_price {
+        display: none;
+    }
+
+    .mp-form-label {
+        color: #23231B !important;
+        font-style: normal;
+        font-weight: 600;
+    }
+
+    .mp_wrapper input[type=text] {
+        /* White */
+        background: #FFFFFF;
+        /* Anchors */
+        border: 1px solid #B92A20;
+        box-sizing: border-box;
+        border-radius: 4px;
+    }
+
+    .mp-form-submit, [type=submit]:not(:disabled) {
+        display: inline-block;
+        padding: 7px 75px;
+        background: #B92A20;
+        border-radius: 3px;
+        border: none;
+        color: #fff;
+    }
+}    
     
 
 //FOOTER STYLES
@@ -1061,6 +1818,160 @@ body {
                 }
             }
         }
+    }
+
+    @media (max-width: 1399px) {
+        .core-services {
+
+            .icon-wrapper {
+              
+                padding: 2rem;
+    
+                 > p {
+
+                    margin: 1rem 0 0 0 !important;
+                    line-height: 32px !important;
+                }
+            } 
+        }
+
+        
+    }
+
+    @media (max-width: 991px) {
+    
+        // Home Page
+        .core-services {
+            padding: 3rem 0 4rem 0 !important;
+
+        .service-title {
+            margin-bottom: 1rem;
+        }
+    }
+        //KINSHIP PAGE 
+        .meetingTimerInner {
+            
+            h3 {
+            font-size: 18px;
+            line-height: 30px;
+            padding-right: 3rem;
+        }
+
+        p {
+            font-size: 44px;
+            line-height: 30px;
+            margin-bottom: 0;
+        }
+
+        span {
+            font-size: 18px;
+        }
+
+    }
+        
+        .icon-wrapper {
+            margin-bottom: .5rem;
+        }
+
+        .numbers-wrapper {
+            .numbers {
+                margin-bottom: 3rem !important;
+            }
+        }
+
+        .communityBg {
+            margin-bottom: 3rem;
+        }
+
+        // Support Page
+        .listings {
+
+            img {
+                text-align: left !important;
+            }
+        }
+
+        // Footer
+        .footer_logo {
+            width: 50%;
+            margin: 0 auto;
+        }
+
+        .footer-col {
+            margin-bottom: 3rem;
+        }
+
+        .footer-copyright {
+            margin-top: 0;
+        }
+    }
+
+    @media (max-width: 768px) {
+
+        //Page titles 
+        .page-titles h1 {
+            line-height: 50px;
+        }
+
+        //Home Page
+        .community-box {
+            margin-bottom: 2rem;
+        }
+
+        .memberSupport {
+            h1 {
+                margin-top: .8rem;
+            }
+        }
+        .meetingTimerInner {
+
+            padding-left: .5rem !important;
+            padding-right: .5rem !important;
+
+            h3 {
+                padding-right: 1rem;;
+            }
+
+            p {
+                font-size: 30px;
+                line-height: 24px;
+            }
+
+            span {
+                font-size: 16px;;
+            }
+
+        }
+
+        // Suppoort Page
+        .mindWrapper h3 {
+            margin-top: 1rem;
+            }
+
+
+        //Contact Page
+        .footer_social {
+            margin-bottom: 20px;
+        }
+
+        //Business Page
+        .business-listing {
+
+           > img {
+                text-align: left;
+            }
+        }
+    }
+
+    @media (max-width: 576px) {
+        .meetingTimerInner {
+            flex-direction: column;
+            h3 {
+                display: block!important;
+                border-right: 0;
+                margin-bottom: 2rem;
+            }
+        } 
     }
 
 

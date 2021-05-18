@@ -21,7 +21,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 
 		<div class="row">
 
-			<div class="col-lg-3 col-md-6 col-sm-12">	
+			<div class="col-lg-3 col-md-12 footer-col">	
 				<div class="footer_logo">
 					<img src="<?php bloginfo('stylesheet_directory'); ?>/images/Op Spartan logos colour-02.png"  alt="Op Spartan Logo"/>
 				</div>
@@ -32,7 +32,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 				</ul>
 			</div><!--col end -->
 
-			<div class="col-lg-3 col-md-6 col-sm-12">
+			<div class="col-lg-3 col-md-6 col-sm-12 footer-col">
 				<h4>Popular Links</h4>
 				<hr class="underline" />
 				<ul class="footer_links">
@@ -43,7 +43,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 				</ul>
 			</div><!-- col end -->
 
-			<div class="col-lg-3 col-md-6 col-sm-12">
+			<div class="col-lg-3 col-md-6 col-sm-12 footer-col">
 				<h4>How you can help</h4>
 				<hr class="underline" />
 				<ul class="footer_help">
@@ -54,7 +54,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 				</ul>
 			</div><!-- col end -->
 
-			<div class="col-lg-3 col-md-6 col-sm-12">
+			<div class="col-lg-3 col-md-6 col-sm-12 footer-col">
 				<h4>Contacts</h4>
 				<hr class="underline" />
 				<ul class="footer_contacts">

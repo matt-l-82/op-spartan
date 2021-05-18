@@ -1,0 +1,9 @@
+{
+    "/js/give-stripe-ach.js": "/js/give-stripe-ach.js",
+    "/js/give-stripe-admin.js": "/js/give-stripe-admin.js",
+    "/css/give-stripe-admin.css": "/css/give-stripe-admin.css",
+    "/js/give-stripe-payment-request.js": "/js/give-stripe-payment-request.js",
+    "/images/apple-pay.svg": "/images/apple-pay.svg",
+    "/images/credit-card.svg": "/images/credit-card.svg",
+    "/images/google-pay.svg": "/images/google-pay.svg"
+}

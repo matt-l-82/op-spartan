@@ -1,0 +1,27 @@
+/**
+ * Give Form Field Manager - Donation Details Screen in WP-Admin
+ */
+
+
+// Submit button in metabox.
+.ffm-submit {
+  .give-submit-wrap {
+	margin-bottom:3px;
+  }
+}
+
+// Make fields look nicer
+#give-form-fields {
+
+  .ffm-checkbox-field label,
+  .ffm-radio-field label {
+	display: block;
+	margin: 5px 0;
+	padding: 0;
+  }
+
+  [data-type="multiselect"] {
+	min-width: 300px;
+  }
+
+}
