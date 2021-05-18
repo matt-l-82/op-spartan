@@ -1,23 +1,5 @@
-<?php
-/**
- * The base configuration for WordPress
- *
- * The wp-config.php creation script uses this file during the
- * installation. You don't have to use the web site, you can
- * copy this file to "wp-config.php" and fill in the values.
- *
- * This file contains the following configurations:
- *
- * * MySQL settings
- * * Secret keys
- * * Database table prefix
- * * ABSPATH
- *
- * @link https://wordpress.org/support/article/editing-wp-config-php/
- *
- * @package WordPress
- */
 
+<<<<<<< HEAD
  require_once dirname(__FILE__) . '/vendor/autoload.php';
 
 $dotenv = Dotenv\Dotenv::createImmutable(__DIR__);
@@ -95,3 +77,5 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 /** Sets up WordPress vars and included files. */
 require_once ABSPATH . 'wp-settings.php';
+=======
+>>>>>>> ee8f1997e0568e51ce2491a7fb4f807dcccb0bfb
